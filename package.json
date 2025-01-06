@@ -1,0 +1,11 @@
+{
+      "name": "api-key-manager",
+      "version": "1.0.0",
+      "description": "A single-page web application for managing API keys and endpoints.",
+      "scripts": {
+        "dev": "vite"
+      },
+      "devDependencies": {
+        "vite": "^4.5.2"
+      }
+    }

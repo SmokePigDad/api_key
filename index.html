@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>API Key Manager</title>
+      <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <div class="container">
+        <h1>API Key Manager</h1>
+        <div class="controls">
+          <button id="addCredentialBtn">Add Credential</button>
+          <button id="importBtn">Import</button>
+          <button id="exportBtn">Export</button>
+          <input type="file" id="fileInput" style="display: none;" accept=".json, .csv">
+        </div>
+        <div id="credentialsList"></div>
+        <div id="modal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Add/Edit Credential</h2>
+            <form id="credentialForm">
+              <label for="name">Name:</label>
+              <input type="text" id="name" required><br>
+              <label for="description">Description:</label>
+              <input type="text" id="description"><br>
+              <label for="apiKey">API Key:</label>
+              <input type="password" id="apiKey" required><br>
+              <label for="endpoint">Endpoint:</label>
+              <input type="password" id="endpoint" required><br>
+              <button type="submit">Save</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <script src="script.js"></script>
+    </body>
+    </html>
